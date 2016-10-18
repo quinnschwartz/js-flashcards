@@ -1,12 +1,12 @@
 $(document).ready(function()  {
   $(".clickable").click(function()  {
-  $("#unicorn-hidden").show();
+  $("#unicorn-hidden").slideDown();
   });
   $(".clickable2").click(function() {
-  $("#info-showing").toggle();
+  $("#info-showing").slideToggle();
   });
   $(".clickable3").click(function() {
-  $("#unicorn-hidden").toggle();
-  $("#info-showing").toggle();
+  $("#unicorn-hidden").slideUp();
+  $("#info-showing").slideUp();
   });
 });
