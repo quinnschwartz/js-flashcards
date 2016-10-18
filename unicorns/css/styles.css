@@ -17,6 +17,15 @@ body {
   display: none;
 }
 
+.unhighlighted {
+  cursor: crosshair;
+}
+
+.highlight {
+  background-color: #F6FA7D;
+  border: 2px solid black;
+}
+
 .clickable {
   cursor: pointer;
   color: #0088cc;
