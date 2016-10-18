@@ -1,7 +1,8 @@
 $(document).ready(function()  {
 
-  $("li").click(function()  {
-    $(this).children("p").toggle();
+  $("initial-show").click(function()  {
+    $("h2", this).slideToggle();
+    $("p", this).slideToggle();
   });
 
 });
