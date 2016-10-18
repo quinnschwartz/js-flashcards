@@ -1,3 +1,14 @@
+body {
+  background-color: #57FC4E;
+  color: #0230FA;
+}
+
+.purple-background {
+  background-color: #6200FF;
+  color: #F9B5FF;
+}
+
+
 #unicorn-hidden {
   display: none;
 }

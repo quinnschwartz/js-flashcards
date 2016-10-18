@@ -9,4 +9,9 @@ $(document).ready(function()  {
   $("#unicorn-hidden").slideUp();
   $("#info-showing").slideUp();
   });
+
+  $("button#red").click(function() {
+    $("body").toggleClass("purple-background");
+  });
+
 });
