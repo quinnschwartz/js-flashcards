@@ -2,30 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>JS and JQuery Flashcards</title>
   </head>
   <body>
+  <div class="container">
     <h1>JS and jQuery Flashcards</h1>
     <ul>
-      <li>JavaScript (JS)</li>
-      <li>Operators</li>
-      <li>Variables</li>
-      <li>Variable naming conventions</li>
-      <li>Functions</li>
-      <li>Methods</li>
-      <li>Arguments</li>
-      <li>Parameters</li>
-      <li>Return</li>
-      <li>Chaining methods</li>
-      <li>Strings</li>
-      <li>Booleans</li>
-      <li>Undefined</li>
-      <li>NaN</li>
-      <li>Escape</li>
-      <li>Alert</li>
-      <li>Comments</li>
-      <li>jQuery</li>
-      <li>Attributes</li>
+      <li class="JS">JavaScript (JS)</li>
+      <div id="JS-hidden">
+        <p>An object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+      </div>
+      <li class="Operators">Operators</li>
+      <div id="Operators-hidden">
+        <p>Operators in JavaScript are very similar to operators that appear in other programming languages. The definition of an operator is a symbol that is used to perform an operation. Most often these operations are arithmetic (addition, subtraction, etc), but not always.</p>
+      </div>
+      <li class="Variables">Variables</li>
+      <div id="Variables-hidden">
+        <p>Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container. Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the var keyword as follows.</p>
+      </div>
+      <li class="Var-naming">Variable naming conventions</li>
+      <div id="Var-naming-hidden">
+        <p>Variables with multiple words should always use an underscore between words. Confusing variable names should end with the variable type. To use camelCase, when sometimes it is impossible to declare a function directly, the function variable name should match some patterns which shows that it is a function.</p>
+      </div>
+      <li class="Functions">Functions</li>
+      <div id="Functions-hidden">
+        <p>Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.</p>
+      </div>
+      <li class="Methods">Methods</li>
+      <div id="Methods-hidden">
+        <p>JavaScript methods are the actions that can be performed on objects. A JavaScript method is a property containing a function definition.</p>
+      </div>
+      <li class="Arguments">Arguments</li>
+        <div id="Arguments-hidden">
+          <p>The arguments object is a local variable available within all functions. You can refer to a function's arguments within the function by using the arguments object.</p>
+        </div>
+      <li class="Parameters">Parameters</li>
+        <div id="Parameters-hidden">
+          <p>An argument is what you pass into a function or method; a parameter is a variable that's assigned to the argument. Below, number1 and number2 are parameters, and 1 and 2 are arguments.</p>
+          <p>This function takes 2 arguments (expecting two numbers) and assigns them to the parameters number1 and number2. The function returns a number:</p>
+          <p>var add = function(number1, number2) { return number1 + number2; };</p>
+          <p>add(1, 2);</p>
+        </div>
+      <li class="Return">Return</li>
+        <div id="Return-hidden">
+          <p>The return statement ends function execution and specifies a value to be returned to the function caller.</p>
+        </div>
+      <li class="Chaining-methods">Chaining methods</li>
+        <div id="Chaining-hidden">
+          <p>To chain an action, you simply append the action to the previous action. The following example chains together the css(), slideUp(), and slideDown() methods. The "p1" element first changes to red, then it slides up, and then it slides down:</p>
+          <p>$("#p1").css("color", "red").slideUp(2000).slideDown(2000);</p>
+        </div>
+      <li class="Strings">Strings</li>
+        <div id="Strings-hidden">
+          <p>The String global object is a constructor for strings, or a sequence of characters.</p>
+        </div>
+      <li class="Booleans">Booleans</li>
+      <div id="Booleans-hidden">
+        <p>A JavaScript Boolean represents one of two values: true or false.</p>
+      </div>
+      <li class="Undefined">Undefined</li>
+      <div id="Undefined-hidden">
+        <p>The undefined property indicates that a variable has not been assigned a value.</p>
+      </div>
+      <li class="NaN">NaN</li>
+      <div id="NaN-hidden">
+        <p>The global NaN property is a value representing Not-A-Number.</p>
+      </div>
+      <li class="Escape">Escape</li>
+      <div id="Escape-hidden">
+        <p>The escape() function encodes a string. This function makes a string portable, so it can be transmitted across any network to any computer that supports ASCII characters. This function encodes special characters, with the exception of: * @ - _ + . /</p>
+      </div>
+      <li class="Alerts">Alert</li>
+      <div id="Alerts-hidden">
+        <p>An alert box is often used if you want to make sure information comes through to the user. When an alert box pops up, the user will have to click "OK" to proceed.</p>
+      </div>
+      <li class="Comments">Comments</li>
+      <div id="Comments-hidden">
+        <p>To create a single line comment in JavaScript, you place two slashes "//" in front of the code or text you wish to have the JavaScript interpreter ignore. When you place these two slashes, all text to the right of them will be ignored, until the next line.</p>
+        <p>Although a single line comment is quite useful, it can sometimes be burdensome to use when disabling long segments of code or inserting long-winded comments. For this large comments you can use JavaScript's multi-line comment that begins with /* and ends with */.</p>
+      </div>
+      <li class="jQuery">jQuery</li>
+      <div id="jQuery-hidden">
+        <p>jQuery is a concise and fast JavaScript library that can be used to simplify event handling, HTML document traversing, Ajax interactions and animation for speedy website development. jQuery simplifies the HTML's client-side scripting, thus simplifying Web 2.0 applications development.</p>
+      </div>
+      <li class="Attributes">Attributes</li>
+      <div id="Attributes-hidden">
+        <p>A DOM node may have attributes and properties. Sometimes people mess them up, because they are related, but they are really two different things.</p>
+        <p>DOM node is an object. So it can store custom properties and methods just like any JavaScript object. Custom DOM properties may have any value, have case-sensitive names, and don't affect HTML.</p>
+        <p>In contrast with properties, attributes may only be strings, are not case-sensitive (because HTML attributes aren't), show up in innerHTML, and can be listed all at once using an array-like 'attributes' property of the element.</p>
     </ul>
+  </div>
   </body>
 </html>
